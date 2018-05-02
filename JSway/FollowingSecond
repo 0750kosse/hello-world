@@ -1,0 +1,35 @@
+let hours = Number(prompt ("enter the hour"));
+let minutes = Number(prompt ("enter the minutes"));
+let seconds = Number(prompt ("enter the seconds"));
+
+// case if seconds & minutes bigger than 59 & hour >=23 , its mignight
+
+if ((seconds >= 59) && (minutes >= 59) && (hours >= 23)) {
+  hours = 0;
+  minutes = 0;
+  seconds = 0;
+  console.log(`it is ${hours} hours, ${minutes} mins and ${seconds} secs`);
+} 
+
+// case if seconds & minutes bigger than 59, adds up an hour
+  
+  else if ((seconds >= 59) && (minutes >= 59)) {
+  hours++;
+  minutes = 0;
+  seconds = 0;
+  console.log(`it is ${hours} hours, ${minutes} mins and ${seconds} secs`);
+} 
+// case if seconds bigger than 59, adds up a minute
+
+  else if (seconds >= 59) {
+  minutes++;
+  seconds = 0;
+  console.log(`it is ${hours} hours, ${minutes} mins and ${seconds} secs`);
+  } 
+
+// in any other case adds up one second
+  
+  else {
+  seconds++;
+  console.log(`it is ${hours} hours, ${minutes} mins and ${seconds} secs`);
+  }
