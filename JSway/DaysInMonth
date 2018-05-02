@@ -1,0 +1,82 @@
+/* Number of days in a month. Write a program that accepts a month number (between 1 and 12), 
+then shows the number of days of that month. 
+Leap years are excluded. Incorrect inputs must be taken into account.
+*/
+
+// *****IF Else
+
+const month = Number(prompt("what month is it?"));
+
+if ((month <= 0) || (month > 12) || !(month === Number)) {
+  console.log(`${month}, such month does not exist`);
+} else if (month === 1){
+  console.log(`month ${month} has 31 days`)
+} else if (month === 2){
+  console.log(`month ${month} has 30 days`)
+} else if (month === 3){
+  console.log(`month ${month} has 29 days`)
+} else if (month === 4){
+  console.log(`month ${month} has 28 days`)
+} else if (month === 5){
+  console.log(`month ${month} has 27 days`)
+} else if (month === 6){
+  console.log(`month ${month} has 26 days`)
+} else if (month === 7){
+  console.log(`month ${month} has 25 days`)
+} else if (month === 8){
+  console.log(`month ${month} has 24 days`)
+} else if (month === 9){
+  console.log(`month ${month} has 23 days`)
+} else if (month === 10){
+  console.log(`month ${month} has 22 days`)
+} else if (month === 11){
+  console.log(`month ${month} has 21 days`)
+} else if (month === 12){
+  console.log(`month ${month} has 20 days`)
+}
+
+// *****Switch ST
+
+const month = Number(prompt("what month is it?"));
+
+switch (month){
+  case 1:
+  console.log(`month has 31 days`);
+    break;
+    case 2:
+  console.log(`month  has 30 days`);
+    break;
+    case 3:
+  console.log(`month  has 29 days`);
+    break;
+    case 4:
+  console.log(`month  has 28 days`);
+    break;
+    case 5:
+  console.log(`month  has 27 days`);
+    break;
+    case 6:
+  console.log(`month has 26 days`);
+    break;
+    case 7:
+  console.log(`month has 25 days`);
+    break;
+    case 8:
+  console.log(`month has 24 days`);
+    break;
+    case 9:
+  console.log(`month  has 23 days`);
+    break;
+    case 10:
+  console.log(`month has 22 days`);
+    break;
+    case 11:
+  console.log(`month has 21 days`);
+    break;
+    case 12:
+  console.log(`month  has 20 days`);
+    break;
+  default:
+    console.log("not a valid month!!")
+}
+
