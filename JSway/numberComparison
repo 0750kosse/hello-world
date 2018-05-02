@@ -1,0 +1,16 @@
+/* Number comparison
+Write a program that accepts two numbers, 
+then compares their values and displays an appropriate message in all cases.
+
+*/const number1 = Number(prompt("whats the first number?"));
+const number2 = Number(prompt("whats the second number?"));
+
+if (number1===number2){
+  console.log(`${number1} and ${number2} are equal`);
+} else if (number1 > number2){
+  console.log(`${number1} is bigger than ${number2}`);
+} else if (number1 < number2){
+  console.log(`${number1} is smaller than ${number2}`);
+} else if (!(number1===Number)|| !(number2===Number)){
+  console.log(`one of both of the inputs are not numbers`);
+}
