@@ -1,0 +1,55 @@
+/* Following day
+Write a program that accepts a day name from the user, 
+then shows the name of the following day. 
+Incorrect inputs must be taken into account.
+
+*/
+//*****Switch statement
+
+switch (nextDay) {
+  case "Monday":
+    console.log("next day would be Tuesday");
+    break;
+    case "Tuesday":
+    console.log("next day would be Wednesday");
+    break;
+    case "Wednesday":
+    console.log("next day would be Thursday");
+    break;
+    case "Thursday":
+    console.log("next day would be Friday");
+    break;
+    case "Friday":
+    console.log("next day would be Saturday");
+    break;
+    case "Saturday":
+    console.log("next day would be Sunday");
+    break;
+    case "Sunday":
+    console.log("next day would be Monday");
+    break;
+  default:
+    console.log("thats not a weekday");
+    }
+    
+    //******* if else
+    
+    const nextDay = prompt("whats the day today ?");
+
+if (nextDay === "Monday") {
+  console.log("next day would be Tuesday");
+    } else if (nextDay === "Tuesday") {
+      console.log("next day would be Wednesday");
+    } else if (nextDay === "Wednesday") {
+      console.log("next day would be Thursday");
+    } else if (nextDay === "Thursday") {
+      console.log("next day would be Friday");
+    } else if (nextDay === "Friday") {
+      console.log("next day would be Saturday");
+    } else if (nextDay === "Saturday") {
+      console.log("next day would be Sunday");
+    } else if (nextDay === "Sunday") {
+      console.log("next day would be Monday");
+    } else {
+      console.log(`${nextDay} you said?, that does not seem a weekday!`);
+    }
