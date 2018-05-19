@@ -9,3 +9,15 @@ for (i =0; i <=10; i++){
 }
 
 When you are done, improve the program so it only accepts numbers between 2 and 9 (use the previous exercise as a blueprint).
+
+let number = Number(prompt("give me the number"));
+
+for (i =0; i <=10; i++){
+  if ((number <=1) || (number > 9)){
+    break;
+    } else { 
+     let multiples = number * i;
+      console.log(multiples);
+     
+   }
+}
