@@ -21,8 +21,10 @@ while (a < 4) {
 //When it's done, improve it so that the 
 //number of turns is given by the user.
 */
-let userPrompt = prompt("tell me waht turn it is");
+let userTurn = Number(prompt("turn number"));
+let a = "";
 
-for (i= 1; i <= userPrompt; i++) {
-  console.log(`current turn is ${i}`);
-}
+while (a < userTurn) {
+  a++;
+  console.log(`your turn number ${a}`);
+  }
