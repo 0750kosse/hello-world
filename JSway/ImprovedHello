@@ -1,0 +1,11 @@
+let userName1 = prompt("whats your firstName?");
+let userName2 = prompt("whats your lastName?");
+
+function sayHello(firstName, lastName) {
+   
+  const message = `Hello, ${userName1} ${userName2}!`;
+  console.log(message);
+  return message;
+}
+
+sayHello();
