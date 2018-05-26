@@ -1,0 +1,28 @@
+const musketeers = ["Athos", "Porthos", "Aramis"];
+
+console.log("FOR LOOP")
+for (i = 0; i < musketeers.length; i++){
+  console.log(musketeers[i]);
+}
+console.log("PUSH NEW ITEM")
+musketeers.push("D´Artagnan");
+console.log(musketeers[i]);
+
+//Shows each array element using the forEach() method.
+console.log("FOR EACH LOOP")
+musketeers.forEach(musketeer => {
+  console.log(musketeer);
+});
+
+//Remove poor Aramis.
+console.log("REMOVING ITEM")
+let removed = musketeers.splice(2,1);
+console.log(removed);
+
+//Shows each array element using a for-of loop.
+console.log("Shows each array element using a for-of loop.")
+for (const musketeer of musketeers) {
+  console.log(musketeer);
+}
+
+
