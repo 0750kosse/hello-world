@@ -1,0 +1,19 @@
+let questionArea = prompt("what is the area:");
+let resultArea = "the circle´s area is ";
+let resultCirc = " and the circle´s circunference is ";
+
+function circArea (r){
+  let area = (r**2) * Math.PI;
+  return area;
+}
+
+console.log(resultArea + circArea(questionArea));
+
+let questionCirc = prompt("and what is the circunference:");
+
+let circunference = function circCirc (r){
+  let circunference = 2*Math.PI*r;
+  return circunference;
+}
+
+console.log(resultCirc + circArea(questionArea));
