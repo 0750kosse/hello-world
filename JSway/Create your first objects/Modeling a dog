@@ -1,0 +1,11 @@
+const dog = {
+  name: "molly",
+  species:"stanford",
+  size:50,
+  bark(){
+    return "whoooooof";
+  }
+};
+
+console.log(`${dog.name} is a ${dog.species} dog measuring ${dog.size}`);
+console.log(`Look, a cat! ${dog.name} barks: ${dog.bark()}`);
