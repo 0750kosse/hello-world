@@ -1,0 +1,16 @@
+function wordProps(){
+  
+  let word = prompt("give me a word and I will show you...");
+  
+  let wordLength = word.length;
+  let lower = word.toLowerCase();
+  let upper = word.toUpperCase();
+  
+  if (word !==upper) {
+      return wordLength + " characters long and in upper case is : " + upper;
+  } else if (word !==lower){
+      return wordLength + " characters long and in lower case is : " + lower;
+  }
+}
+
+wordProps();
