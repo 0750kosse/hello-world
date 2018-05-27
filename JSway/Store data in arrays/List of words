@@ -1,0 +1,14 @@
+
+
+function userTyped (){
+
+  let userWord="";
+  let userAnswers = [];
+  
+  while (userWord !=="stop"){
+    userWord = prompt("type a word or stop to exit");
+    userAnswers.push(userWord);
+    } return userAnswers.slice(0,-1);
+} 
+
+userTyped();
