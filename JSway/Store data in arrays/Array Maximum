@@ -1,0 +1,17 @@
+//Write a program that creates the following array, 
+//then calculates and shows the array's maximum value.
+
+const values = [3, 11, 7, 2, 9, 10];
+
+function maximum(valuesArray){
+  let max = 0;
+  for (i = 0; i < valuesArray.length; i++) {
+    
+     if (valuesArray[i] > max) {
+       max = valuesArray[i];
+     } 
+     
+  }    return max;
+}
+
+maximum(values);
